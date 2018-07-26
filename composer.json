@@ -1,0 +1,26 @@
+{
+    "name": "kl83/yii2-baron-scrollbar",
+    "description": "Baron — a small, fast and crossbrowser custom scrollbar with native system scroll mechanic.",
+    "keywords": ["yii2", "widget", "custom scrollbar", "baron scrollbar"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Solovyov",
+            "email": "solovyov.a.a.19@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.14",
+        "npm-asset/baron": "~3.0.3"
+    },
+    "require-dev": {
+        "yiisoft/yii2-bootstrap": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kl83\\widgets\\": "src/"
+        }
+    }
+}
