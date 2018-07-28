@@ -32,12 +32,17 @@ class Scrollbar extends Widget
     /**
      * @var array Baron scrollbar default options.
      */
-    private $baronDefaults = [
+    protected $baronDefaults = [
         'scroller' => '.baron__scroller',
         'bar' => '.baron__bar',
         'scrollingCls' => '_scrolling',
         'draggingCls' => '_dragging',
     ];
+
+    /**
+     * @var string Widget-view path.
+     */
+    protected $view = '@vendor/kl83/yii2-baron-scrollbar/src/views/scrollbar';
 
     /**
      * @var string Theme.
@@ -65,7 +70,7 @@ class Scrollbar extends Widget
         );
         $this->options['data']['options'] =
             ArrayHelper::merge($this->baronDefaults, $this->baronOptions);
-        return $this->render('scrollbar', [
+        return $this->render($this->view, [
             'widget' => $this,
             'content' => ob_get_clean(),
         ]);

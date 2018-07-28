@@ -6,17 +6,17 @@
 The preferred way to install this extension is through [composer](https://getcomposer.org/).
 
 Either run
-~~~
+```php
 php composer.phar require kl83/yii2-baron-scrollbar *
-~~~
+```
 or add
-~~~
+```php
 "kl83/yii2-baron-scrollbar": "*"
-~~~
+```
 to the require section of your composer.json file.
 
 ## Usage
-~~~
+```php
 <?php \kl83\widgets\Scrollbar::begin([
     'theme' => \kl83\widgets\Scrollbar::THEME_MACOSX,
     'options' => [
@@ -29,7 +29,7 @@ to the require section of your composer.json file.
 <p>Some scrollable content...</p>
 <p>Height of parent DOM element must be set.</p>
 <?php \kl83\widgets\Scrollbar::end(); ?>
-~~~
+```
 
 ## License
 MIT License
